@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Perfect Store</title>
+    <link rel='stylesheet' href='/uploaded/css/cart.css'>
+  
+     
+</head>
+<body>
+  <%- include('header.ejs',{message:message , userName:userName}); %>
+ 
+       <div class="row">
+        <div class="col-75">
+          <div class="container" style="margin-left: 30px; margin-top: 30px;">
+            <form action="/checkout">
+      
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3>
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname"  style="width: 100%;
+                  margin-bottom: 20px;
+                  padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 3px;" name="firstname" >
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" style="width: 100%;
+                  margin-bottom: 20px;
+                  padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 3px;" name="email" >
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" style="width: 100%;
+                  margin-bottom: 20px;
+                  padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 3px;"name="address" >
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" style="width: 100%;
+                  margin-bottom: 20px;
+                  padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 3px;" name="city" >
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="text" id="state" style="width: 100%;
+                      margin-bottom: 20px;
+                      padding: 12px;
+                      border: 1px solid #ccc;
+                      border-radius: 3px;" name="state" >
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input type="text" id="zip" style="width: 100%;
+                      margin-bottom: 20px;
+                      padding: 12px;
+                      border: 1px solid #ccc;
+                      border-radius: 3px;" name="zip" >
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" style="width: 100%;
+                  margin-bottom: 20px;
+                  padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 3px;" name="cardname" >
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" style="width: 100%;
+                  margin-bottom: 20px;
+                  padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 3px;" name="cardnumber" >
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" style="width: 100%;
+                  margin-bottom: 20px;
+                  padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 3px;" name="expmonth" >
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" style="width: 100%;
+                      margin-bottom: 20px;
+                      padding: 12px;
+                      border: 1px solid #ccc;
+                      border-radius: 3px;" name="expyear" >
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" style="width: 100%;
+                      margin-bottom: 20px;
+                      padding: 12px;
+                      border: 1px solid #ccc;
+                      border-radius: 3px;" name="cvv" >
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <input type="submit" value="Continue to checkout" style="font: bold; font-size:30px;" class="btn">
+            </form>
+          </div>
+        </div>
+      
+        <div class="col-25">
+          <div class="container" style="margin-left: 15px; margin-top: 30px;">
+            <h4>Cart
+              <span class="price" style="color:black">
+                <i class="fa fa-shopping-cart"></i>
+                <b>4</b>
+              </span>
+            </h4>
+            <% if(data.length){ for(let i=0;i < data.length;i++) { %>   
+              <p><a href="#" id="home"> <%= data[i].product_name %>  </a> <span class="price">  <%= data[i].product_price %> <a href="/#/">
+                <i class="bi bi-trash" style="color:darkred;"></i>
+              <% } }else{ %>
+              <div>
+              <h1>  NO Products</h1>
+              </div>
+              <% } %>
+            <!-- <p><a href="#" id="home">Casual blouse</a> <span class="price">300 EGP  <a href="/#/">
+              <i class="bi bi-trash" style="color:darkred;"></i>
+
+          </a> </span></p>
+            <p><a href="#" id="home">Pants</a> <span class="price">250 EGP  <a href="/#/">
+              <i class="bi bi-trash" style="color:darkred;"></i>
+          </a>  </span></p>
+            <p><a href="#" id="home">Snickers</a> <span class="price">500 EGP  <a href="/#/">
+              <i class="bi bi-trash" style="color:darkred;"></i>
+          </a>  </span></p>
+            <p><a href="#" id="home">Socks</a> <span class="price">50 EGP  <a href="/#/">
+              <i class="bi bi-trash" style="color:darkred;"></i>
+          </a> </span></p> -->
+            <hr>
+            <p>Total <span class="price" style="color:black"><b><%= data[0].sum %></b></span></p>
+          </div>
+        </div>
+      </div>
+     
+</body>
+</html>

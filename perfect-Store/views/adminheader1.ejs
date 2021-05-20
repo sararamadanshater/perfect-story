@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>admin</title>
+    <!-- <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='home.css'> -->
+    <link href="/uploaded/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/uploaded/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/uploaded/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+  
+    <div class="parent">
+        <div class="row">
+            <div class="PX-2 col-md-2">
+                    <nav class=" rounded navbar navbar-expand-lg navbar-dark bg-dark">                  
+                        <div class="   collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="  flex-column navbar-nav mr-auto">
+                            <li class="py-3 nav-item active">
+                              <a class="nav-link" href="/adminloginsend"><strong>PERFECT STORE </strong><span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="py-3 nav-item">
+                              <a class="nav-link" href="/addnewproduct"><i class=" px-3 bi bi-plus"></i>ADD PRODUCT</a>
+                            </li>
+                            <li class="py-3 nav-item">
+                                <!-- <a class="nav-link" href="#"><i class=" px-3 bi bi-pencil"></i>update product</a> -->
+                                <div class="  accordion" id="accordionExample">
+                                  <div style="color: lavender ;" class="bg-dark  card">
+                                    <div class="card-header" id="headingOne">
+                                      <h2 class="mb-0">
+                                        <button style="color: lavender  ;border: 1px solid wheat ;" class="btn  mr-2" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          <i class=" px-3 bi bi-pencil"></i> product
+                                        </button>
+                                        
+                                      </h2>
+                                    </div>
+                                
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                      <div class="card-body">
+                                        DElETE
+                                      </div>
+                                      <div class="card-body">
+                                        EDIT
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+    
+    
+    
+    
+    
+    
+                              </li>
+                              <li class="py-3 nav-item">
+                                <a class="nav-link" href="/orders"><i class=" px-3 bi bi-basket2"></i>ORDERS</a>
+                              </li>
+                              <li class="py-3 nav-item">
+                                <a class="nav-link" href="#"><i class="px-3 bi bi-calendar3"></i>CALENDER</a>
+                              </li>
+                            
+                            
+                          </ul>
+                        
+                        </div>
+                      </nav>
+                    
+            </div>
+    
+            <div class="col-md-10">
+                <div class="row">
+    
+                    <div class="col-md-6">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search items" >
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                            </div>
+                          </div>
+    
+                    </div>
+                    <!-- <div class="col-md-1">
+                        
+                    </div> -->
+                    <div class="d-flex col-md-2">
+                       <h5> <i class=" px-5 bi bi-gear"></i></h5>
+                        <h5><i class="px-5 bi bi-bell"></i></h5>
+    
+                    </div>
+                    <div class="col-md-1">
+                        <img style="width: 50px; height: 50px;" src="/uploaded/images/projectimages/idres.jpg" class="  rounded-circle">
+    
+                        
+    
+                    </div>
+                    <div class="col-md-1">
+                        
+                        <div class="mx-0 dropdown">
+                            <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <%= data[0].name %> 
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="/adminlogout">log out</a>
+                              
+                            </div>
+                          </div>
+                    </div>
+                </div>
+    
+                
+                <div  class=" container ">
+            
+              <div class=" bg-light m-3 row">
+                <div class="col-md-3">
+                  <img src="/uploaded/images/projectimages/images.jpg" class="img-fluid">
+                </div>
+                
+<script src="/uploaded/js/jquery-3.3.1.slim.min.js"></script>
+<script src="/uploaded/js/popper.min.js"></script>
+<script src="/uploaded/js/bootstrap.min.js"></script>
+<script src="/uploaded/js/mine.js"></script>
+</body>
+</html>

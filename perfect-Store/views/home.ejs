@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Perfect Store</title>
+   
+</head>
+
+<body>
+     <!-- -------------------------------login and staff only -------------------------------------------------------->
+    <!-- <div id="header">
+        <div class="first_row_items">
+    
+            <a id="log" href="/userlogin">
+                log in
+            </a>
+            <span>
+                .
+            </span>
+            <a href="/adminlogin">
+                staff only
+            </a>
+
+        </div>
+    </div> -->
+    <!-- -----------------------------------------Menue --------------------------------------------------------------------->
+    <!-- <div id="logo-menue">
+        <div id="logo">
+            <h1 >
+                perfect Store..
+            </h1>
+        </div>
+     
+        <div  id="menue">
+          
+                <a id="home">
+                    Home
+                </a>
+                <a id="about">
+                   About
+                </a>
+                <a id="contact">
+                    Contact
+                </a>
+                <a id="products" href="/showall">
+                   products
+                </a>
+            
+        </div>
+         
+    </div> -->
+    <%- include('header.ejs',{message:message , userName:userName}); %>
+  
+      <div class="bd-example ">
+        <div id="indicators" class="  carousel carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#indicators" data-slide-to="0" class="active shape"></li>
+            <li data-target="#indicators" data-slide-to="1"></li>
+            <li data-target="#indicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner sliders ">
+            <div class="carousel-item  slider-1 active ">
+              <div class="carousel-caption pb-5 mb-5 ">
+                <h1>We Are Awesome</h1>
+                <p>Experts in women and men shopping.</p>
+                 
+              </div>
+            </div>
+            <div class="carousel-item slider-2">
+              <div class="pb-5 mb-5 carousel-caption ">
+                <h1>We Are Creative</h1>
+              <p>Experts in women and men shopping.</p>
+              
+      
+      
+              </div>
+            </div>
+            <div class="carousel-item slider-3">
+              <div class="pb-5 mb-5 carousel-caption ">
+                <h1>We Are near</h1>
+              <p>Experts in women and men shopping.</p>
+              
+      
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------------------------------category--------------------------------------------------- -->
+      <section class="portofolios text-center pt-5">
+        <div class="container">
+                <h2 class="pt-5 pb-2">Categories</h2>
+            <p>Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent molestiae maiores, quidem cumque!</p>
+            <ul class="nav mb-5 nav-pills  mb-3 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item px-2">
+            <a class="nav-link active " id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">clothes</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link  " id="pills-webdesign-tab" data-toggle="pill" href="#pills-webdesign" role="tab" aria-controls="pills-webdesign" aria-selected="false">electronics</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link " id="pills-branding-tab" data-toggle="pill" href="#pills-branding" role="tab" aria-controls="pills-branding" aria-selected="false">cosmatics</a>
+          </li>
+             <li class="nav-item px-2">
+            <a class="nav-link" id="pills-photography-tab" data-toggle="pill" href="#pills-photography" role="tab" aria-controls="pills-photography" aria-selected="false">shoes</a>
+          </li>
+        </ul>
+            <div class="tab-content">
+          <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="home-tab">
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="row mb-4">
+                          <div class="col-md-6">
+                              <div class="first-item">
+                              <img src="../imgs/8.jpg" class="img-fluid">
+                                  <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                      
+                                  </div>
+                              </div>
+                          
+                          </div>
+                          <div class="col-md-6">
+                               <div class="first-item">
+                         <img src="../imgs/22.jpg" class="img-fluid">
+                                   <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                      
+                                  </div>
+                                   
+        
+                                   
+                              
+                              </div>
+                          
+                          </div>
+                      
+                      </div>
+                      <div class="second-item mb-4">
+                <img src="../imgs/7.jpg" class="img-fluid">
+                          <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                      
+                                  </div>
+                          
+                      </div>
+                      
+                  
+                  
+                  </div>
+                  <div class="col-md-6">
+                      <div class="second-item mb-4">
+                <img src="../imgs/24.jpg" class="img-fluid">
+                          <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                      
+                                  </div>
+        
+                      
+                      
+                      </div>
+                      <div class="row">
+                          <div class="col-md-6">
+                              <div class="first-item">
+                              <img src="../imgs/25.jpg" class="img-fluid">
+                                  <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                      
+                                  </div>
+                              </div>
+                          
+                          </div>
+                          <div class="col-md-6">
+                               <div class="first-item">
+                         <img src="../imgs/26.jpg" class="img-fluid">
+                                   <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                      
+                                  </div>
+        
+                                   
+                              
+                              </div>
+                          
+                          </div>
+                      
+                      </div>
+                  
+                  
+                  </div>
+              
+              
+              
+              </div>
+              <div class="float-right mt-2">
+                <a style="text-decoration-line: none;color: black;"  href="/clothes">More<i class="bi bi-caret-down-fill"></i></a>
+            </div>
+                </div>
+          <div class="tab-pane fade" id="pills-webdesign" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="first-item">
+                              <img src="../imgs/34.jpg" class="img-fluid">
+                                  <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                     
+                                  </div>
+                              </div>
+                  
+                  </div>
+                  <div class="col-md-6">
+                      <div class="second-item mb-4">
+                <img src="../imgs/31.jpg" class="img-fluid">
+                          <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                      
+                                  </div>
+        
+                      
+                      
+                      </div>
+                  
+                  </div>
+                  <div class="col-md-3">
+                       <div class="first-item">
+                              <img src="../imgs/3.jpg" class="img-fluid">
+                                  <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                      
+                                  </div>
+                              </div>
+                  
+                  </div>
+              
+              </div>
+              <div class="float-right mt-2">
+                <a style="text-decoration-line: none;color: black;"  href="/electronics">More<i class="bi bi-caret-down-fill"></i></a>
+            </div>
+              </div>
+          <div class="tab-pane fade" id="pills-branding" role="tabpanel" aria-labelledby="messages-tab">
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="first-item">
+                         <img src="../imgs/41.jpg" class="img-fluid">
+                                   <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                      
+                                  </div>
+                                   
+        
+                                   
+                              
+                              </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="second-item mb-4">
+                <img src="../imgs/42.jpg" class="img-fluid">
+                          <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                      
+                                  </div>
+                          
+                      </div>
+                  </div>
+              
+              </div>
+              <div class="float-right mt-2">
+                <a style="text-decoration-line: none;color: black;"  href="/cosmatics">More<i class="bi bi-caret-down-fill"></i></a>
+            </div>
+                </div>
+          <div class="tab-pane fade" id="pills-photography" role="tabpanel" aria-labelledby="settings-tab">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="first-item">
+                         <img src="../imgs/45.jpg" class="img-fluid">
+                                   <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                      
+                                  </div>
+                                   
+        
+                                   
+                              
+                              </div>
+                          
+                    
+                    </div>
+                    <div class="col-md-3">
+                         <div class="first-item">
+                         <img src="../imgs/43.jpg" class="img-fluid">
+                                   <div class="img-overlay d-flex flex-column justify-content-center align-items-center">
+                                      
+                                  </div>
+        
+                                   
+                              
+                              </div>
+                    
+                    </div>
+              
+              
+              </div>
+              <div class="float-right mt-2">
+                <a style="text-decoration-line: none;color: black;"  href="/shoes">More<i class="bi bi-caret-down-fill"></i></a>
+            </div>
+                </div>
+        </div>
+            
+            
+            
+            
+                </div>    
+            
+            
+            
+            </section>
+
+
+
+      <!---------------------------------------------- contact form------------------------------------------------------------------------------------------ -->
+      <section class="contacts pt-5 mt-5 text-center mb-5 pb-5">
+        <div class="container">
+            <h3 class="pb-3">Get In Touch</h3>
+            <p class="pb-3 text-muted mx-5">Uaerat litora, taciti quaerat dolor ligula laoreet omnis aut scelerisque ex fuga platea eveniet pulvinar praesent molestiae maiores, quidem cumque!</p>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="contact text-center">
+                <i class="fas fa-map-marker-alt text-white"></i>
+                <h5>ADDRESS STREET</h5>
+                <p>Address : No 40 Baria Sreet 133/2</p>
+                <p>NewYork City, NY, United States.</p>
+            </div>
+            </div>
+             <div class="col-lg-3 col-md-6">
+                <div class="contact text-center">
+                <i class="fas fa-phone-alt"></i>
+                <h5>NUMBER PHONE</h5>
+                <p>Address : No 40 Baria Sreet 133/2</p>
+                <p>NewYork City, NY, United States.</p>
+            </div>
+            </div>
+             <div class="col-lg-3 col-md-6">
+                <div class="contact text-center">
+                <i class="fas fa-fax"></i>
+                <h5>NUMBER PHONE</h5>
+                <p>Address : No 40 Baria Sreet 133/2</p>
+                <p>NewYork City, NY, United States.</p>
+            </div>
+            </div>
+             <div class="col-lg-3 col-md-6">
+                <div class="contact text-center">
+                <i class="far fa-envelope"></i>
+                <h5>ADDRESS EMAIL</h5>
+                <p>Address : No 40 Baria Sreet 133/2</p>
+                <p>NewYork City, NY, United States.</p>
+            </div>
+            </div>
+            
+            
+            </div>
+        
+        </div>
+    
+    
+    </section>
+    
+    <%- include('footor.ejs') %>
+    
+    <!-- -------------------------------------------import js bootstrap  ----------------------------------------------------> 
+   
+</body>
+
+</html>
+
+</html>

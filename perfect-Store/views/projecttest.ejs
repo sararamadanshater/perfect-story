@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>add product</title>
+    <!-- <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='home.css'> -->
+
+
+</head>
+<%- include('adminheader.ejs',{data:data}); %>
+<body> 
+    <div class="py-3  col-md-6 m-auto">
+   
+        <form  method="POST" action="/add" enctype="multipart/form-data">
+            <div class="col-md-12" >
+                <!-- <h4>hello</h4> -->
+                <%if (message) { %>
+                  <div class="alert alert-success alert-dismissible fade show" role="alert">
+                      <strong>The product has been successfully added to the products List</strong> 
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  <% } %>
+              </div>
+            
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="product Name" name="name" required >
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" placeholder="Price" name="Price" required>
+                </div>
+                <div class="form-group">
+                    <!-- <input type="number" class="form-control" placeholder="Category" name="Category" required> -->
+                    <select id="inputState" class="form-control" name="Category" placeholder="Category">
+                        <option selected disabled>Category...</option>
+                        <option>Clothes</option>
+                        <option>Electronics</option>
+                        <option>Cosmatics</option>
+                        <option>Shoes</option>
+                      </select>    
+                </div>
+        
+    
+            <div class="form-group">
+                <textarea class="form-control" placeholder="product description"  name="desc" required></textarea>
+            </div>
+    
+            <div class="custom-file form-group">
+                <input type="file" multiple  class="custom-file-input"  placeholder="product photo" name="myImg" >
+                <label class="custom-file-label"> product photo...</label>
+                <!-- <input type="file"  name="myImg" required> -->
+            </div>
+    
+                    <div>
+                        <input value="AddProduct" class="btn btn-dark mt-2" type="submit" >
+                    </div>
+        </form>
+        </div>
+        <script>
+            // Add the following code if you want the name of the file appear on select
+            $(".custom-file-input").on("change", function() {
+              var fileName = $(this).val().split("\\").pop();
+              $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+            });
+            </script>
+
+    <!-- <script>
+        async function addProduct() {
+
+            let product =
+            {
+                name: productName.value,
+                descrip: description.value,
+                img: photo.value
+
+            }
+            let res = await fetch("/add",
+                {
+                    method: "POST",
+                    headers: {
+                        "content-type": "application/json"
+                    },
+                    body: JSON.stringify(product)
+                })
+                let resJson = await res.json();
+            if (resJson.success) {
+                alert("car added successfully");
+            } else 
+            {
+                alert("error happened")
+            }
+        } 
+
+
+    </script> -->
+
+  
+</body>
+
+</html>

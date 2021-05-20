@@ -1,0 +1,69 @@
+<html>
+<head>
+
+<link href="/uploaded/css/bootstrap.min.css" rel="stylesheet">
+<link href="/uploaded/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/uploaded/css/all.css">
+
+</head>
+
+<body>
+    
+    <script>
+    
+    
+    </script>
+<script src="/uploaded/js/jquery-3.3.1.slim.min.js"></script>
+<script src="/uploaded/js/popper.min.js"></script>
+<script src="/uploaded/js/bootstrap.min.js"></script>
+<script src="/uploaded/js/mine.js"></script>
+
+<%- include('header.ejs',{message:message}); %>
+    
+    <div class="container ">
+        <h1>REGISTER</h1>
+        <div class="row">
+            
+            <div class="col-md-2" >
+                <!-- <h4>hello</h4> -->
+            </div>
+            <div class="col-md-8 " style="background-color: beige; height: 400;" >
+                <form action="/signup" method="POST">
+                        <!-- <h4>hello</h4> -->
+                        <%if (result) { %>
+                          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                              <strong>check your password!</strong> You should check in on some of those fields below.
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                          <% } %>
+                <div class="form-group">
+                    <label><strong>Name</strong></label>
+                    <input class="form-control" type="text" name="username" placeholder="name" required> 
+                </div>
+                <div class="form-group"> 
+                    <label><strong>Email</strong></label>
+                    <input class="form-control" type="email" name="email" placeholder="email" required > 
+                </div>
+                <div class="form-group">
+                    <label><strong> Password</strong> </label>
+                    <input class="form-control" type="password" name="password" placeholder="password" required > 
+                </div>
+                <div class="form-group">
+                <label><strong>ConfirmPassword</strong> </label>
+                <input class="form-control" type="password" name="confirmpassword" placeholder="confirmPassword" required> 
+            </div>
+        
+                <button type="submit" class="btn btn-dark"> Register</button>
+            </form>
+            </div>
+            <div class="col-md-2" >
+                <!-- <h4>hello</h4> -->
+            </div>
+        
+        </div>
+        
+        </div>
+</body>
+</html>

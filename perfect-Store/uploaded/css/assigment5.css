@@ -1,0 +1,488 @@
+/* nav a
+{
+    color:white!important;
+} */
+/* .list-nave-mine li:hover a:before
+{
+    content:"";
+    height: 1px;
+    width: 20px;
+    background:white;
+    position: absolute;
+    display: block;
+    transition: all 2s;
+}  */
+
+/* .list-nave-mine li:hover a:after
+{
+    content:"";
+    height: 1px;
+    width: 20px;
+    background:white;
+    position: absolute;
+    display: block;
+   right: 0px;
+    transition: all 2s;
+} */
+/* .nav ul li a
+{
+     
+   font-weight: 600;
+    position: relative;
+} */
+/* .h-link:befor
+{
+ 
+    content:"";
+    height: 1px;
+    width: 20px;
+    background:white;
+    position: absolute;
+    display: block;
+    transition: all 1s;
+   
+}
+.h-link:after
+{
+ 
+    content:"";
+    height: 1px;
+    width: 20px;
+    background:white;
+    position: absolute;
+    display: block;
+   right: 0px
+  
+} */
+/* .logo
+{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+} */
+/* .carousel-item
+{
+    position: relative;
+} */
+.carousel-item{
+    position: relative !important;
+}
+.carousel-caption {
+  position: absolute !important;
+  float: left;
+  right: 15%;
+  bottom:25% !important;
+  left: 50%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  /*background-color: aqua;*/
+  margin-bottom: 100px !important;
+}
+
+
+.slider-1
+{
+    background-image: url(../../imgs/12.jpg);
+    background-size: cover;
+    height: 700px;
+}
+.slider-2
+{
+  background-image: url(../../imgs/11.jpg);
+    background-size: cover;
+    height: 700px;  
+}
+.slider-3
+{
+  background-image:url(../../imgs/5.jpg);
+    background-size: cover;
+    height: 700px;  
+}
+.sliders h1
+{
+    font-size: 95px;
+    font-weight: 700;
+}
+.sliders p
+{
+        color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+   
+    text-transform: capitalize;
+}
+.slider-btn
+{
+    border: 1px solid #fff;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 14px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.slider-btn:hover
+{
+    background-color: dimgrey;
+}
+.carousel-indicators li
+{
+    width:30px;
+    height: 7px;
+    background-color:white;
+/*  background-clip: padding-box;*/
+/*  border: 1px solid white;*/
+    opacity: .3;
+    transition: opacity 0.6s;
+    margin-bottom: 40px;
+}
+.progress
+{
+    position: relative;
+}
+/*
+.progress::before
+{
+  content:"";
+    height: 25px;
+    width: 25px;
+    background:black;
+    position: absolute;
+    display: block;
+    top: -9px;
+    right: 0px;
+     
+}*/
+.services h2
+{
+    position: relative;
+}
+.services h2::after
+{
+    content:"";
+    height: 2px;
+    width: 80px;
+    background:black;
+    position: absolute;
+    display: block;
+    left: 47%;
+    top: 100%;
+}
+.services
+{
+    background-color: #f1f1f1;
+    
+}
+.service
+{
+    background-color: white;
+    padding-top: 50px;
+        padding-bottom: 30px;
+padding-left: 10px;
+    padding-right: 10px;
+    transition: all .3s;
+    
+}
+.service i
+{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.service h3
+{
+    color: dimgrey;
+ font-size: 24px;
+    font-weight: 400;   
+}
+.service p
+{
+    color: dimgrey;
+}
+.service:hover
+{
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+}
+
+ 
+
+
+.portofolios h2
+{
+    position: relative;
+}
+.portofolios h2::after
+{
+    content:"";
+    height: 2px;
+    width: 80px;
+    background:black;
+    position: absolute;
+    display: block;
+    left: 47%;
+    top: 100%;
+}
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: black !important;
+}
+    
+    
+
+
+.nav-pills a
+{
+    color: black !important;
+    transition: all .5s;
+}
+.nav-pills a:hover
+{
+   background-color: black !important;
+    color: white !important;
+}
+/* portofolio */
+.img-overlay
+{
+    background-color: rgba(0,0,0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all .3s;
+    
+}
+.first-item
+{
+    position: relative;
+}
+.second-item
+{
+    position: relative;
+}
+.first-item:hover .img-overlay
+{
+    opacity: 1;
+}
+.second-item:hover .img-overlay
+{
+    opacity: 1;
+}
+.img-overlay i
+{
+    font-size: 60px;
+    color: white;
+}
+.overlay-caption
+{
+    color: white;
+    font-size:16px;
+/*    margin-top:50px; */
+}
+/*teammmmmmmmmmmmmmmmmmmms*/
+.team
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.team-overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    opacity: 0;
+    transition: all .3s;
+}
+.team-overlay-icon
+{
+    background-color: rgba(0,0,0,.9);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding: 10px;
+    transition: all .3s;
+    color: white;
+    font-size: 16px
+}
+.team:hover .team-overlay
+{
+    opacity: 1;
+}
+.team:hover .team-overlay-icon
+{
+    top: 90%;
+}
+.team a
+{
+    color:white;
+    font-size: 18px;
+}
+.teams h2
+{
+    position: relative;
+}
+.teams h2::after
+{
+    content:"";
+    height: 2px;
+    width: 80px;
+    background:black;
+    position: absolute;
+    display: block;
+    left: 47%;
+    top: 100%;
+}
+.team-overlay-icon i
+{
+    margin: 3px;
+    transition: all .3s;
+}
+/*
+.team-overlay-icon i:hover
+{
+    border: 1px solid white;
+}*/
+.team-caption
+{
+    background-color:white;
+    border: solid 1px darkgray;
+    border-top: none;
+    
+}
+
+.cards
+{
+    background-color: #f1f1f1;
+}
+.card button
+{
+    border: solid black 1px;
+    
+}
+.clints::before
+{
+    background: #000;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.82;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.clints
+{
+    background-image:url(imgs-assig5/2-1.jpg);
+    background-size: cover;
+height: 400px;
+    position: relative;
+    
+}
+.crousel1-indi
+{
+    position: absolute;
+    top: 90%;
+}
+.contact i
+{
+        border: 3px solid transparent;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 36px;
+    height: 95px;
+    line-height: 90px;
+    transition: all 0.3s;
+    width: 95px;
+    background: #3e3e3e;
+    margin-bottom: 50px;
+}
+.contact:hover i
+{
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 4px #444; 
+}
+.contacts h3
+{
+    position: relative;
+}
+.contacts h3::after
+{
+    content:"";
+    height: 2px;
+    width: 80px;
+    background:black;
+    position: absolute;
+    display: block;
+    left: 47%;
+    top: 100%;
+}
+.form-info
+{
+    background-color: #f1f1f1;
+}
+.info input
+{
+    background-color: #e7e7e7;
+    border: inherit;
+    border-radius: 0;
+    box-shadow: inherit;
+    color: #666;
+    font-size: 13px;
+    height: 50px;
+    outline: medium none;
+    padding: 0 20px;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+.info textarea
+{
+    background-color: #e7e7e7;
+    border: inherit;
+    border-radius: 0;
+    box-shadow: inherit;
+    color: #666;
+    font-size: 13px;
+    outline: medium none;
+    padding: 0 20px;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+.footer a
+{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+.footer
+{
+    background-color: black;
+}
+.footer h5
+{
+    font-size: 12;
+    color: white;
+}
+.footer-caption
+{
+    border-bottom: 1px solid gray;
+}

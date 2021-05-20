@@ -1,0 +1,50 @@
+#form-div
+{    
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+}
+#form
+{
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    
+}
+#email_input
+{
+    width: 100%;
+}
+#message_area
+{
+    width: 100%;
+}
+#send
+{
+    align-self: center;
+}
+#carouselExampleIndicators{
+    width: 100%;
+  
+  display: flex;
+justify-content: center;
+}
+#main-slider
+{
+width: 96%;
+
+
+}
+/*************************************************** @media************************************************************ */
+@media (max-width:800px) 
+ {
+#form
+{
+   width: 100%; 
+}
+ }

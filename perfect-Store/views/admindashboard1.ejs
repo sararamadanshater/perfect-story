@@ -1,0 +1,92 @@
+<html>
+<head>
+<!-- <link href="/uploaded/css/bootstrap.min.css" rel="stylesheet">
+<link href="/uploaded/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/uploaded/css/all.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
+<title>dashboard</title>
+</head>
+
+<body>
+
+  <%- include('adminheader.ejs',{data:data}); %>
+            <div class="py-3 col-md-9">
+              <h5>WELCOME BACK</h5>
+              <h3 style="color: indigo;">! <%= data[0].name %> </h3>
+              <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer took a galley of type and scrambled it to make a type spec
+                  imen book. It has survived not only five centuries, but also the leap into electronic
+                  typesetting, remaining essentially unchanged. It was popularised in the 1960s with the 
+                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+                  publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            </div>
+
+          </div>
+
+
+          
+            </div>
+
+            <!-- <div class="container  "> -->
+              <!-- <div style="height: 40px;" class="bg-info" >  -->
+                <div class="m-3 row">
+                  <div class=" col-md-3">
+                   <div style="height: 100px;" class="py-3 d-flex justify-content-center bg-light" >
+                     <h1><i class="px-3 bi bi-person-fill"></i></h1>
+                     <div>
+                     <h3><%= clients[0].users %> </h3>
+                     <h5>Customers</h5>
+                   </div>
+                   </div>
+                  </div>
+  
+                <div class=" col-md-3">
+                 <div style="height: 100px;" class="py-3 d-flex justify-content-center bg-light" >
+                   <h1><i class="px-3 bi bi-list-check"></i></h1>
+                   <div>
+                   <h3>2000</h3>
+                   <h5>Order</h5>
+                 </div>
+                 </div>
+                </div>
+                <div class="col-md-3">
+             <div style="height: 100px;" class="py-3 d-flex justify-content-center bg-light" >
+               <h1><i class="px-3 bi bi-cart-fill"></i></h1>
+               <div>
+               <h3><%= products[0].count %> </h3>
+               <h5>Product</h5>
+             </div>
+             </div>
+                </div>
+                <div class="col-md-3">
+         <div style="height: 100px;" class="py-3 d-flex justify-content-center bg-light" >
+           <h1><i class="px-3 bi bi-arrow-down-square-fill"></i></h1>
+           <div>
+           <h3>100</h3>
+           <h5>Offer</h5>
+         </div>
+         </div>
+    </div>
+           </div>
+       <!-- </div> -->
+           <!-- </div> -->
+
+            
+</div>
+
+
+
+
+
+
+
+
+<!-- <script src="/uploaded/js/jquery-3.3.1.slim.min.js"></script>
+<script src="/uploaded/js/popper.min.js"></script>
+<script src="/uploaded/js/bootstrap.min.js"></script>
+<script src="/uploaded/js/mine.js"></script> -->
+
+</body>
+</html>

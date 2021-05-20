@@ -1,0 +1,72 @@
+<html>
+<head>
+
+<!-- <link href="../puplic/css/bootstrap.min.css" rel="stylesheet"> -->
+
+
+<link href="/uploaded/css/bootstrap.min.css" rel="stylesheet">
+<link href="/uploaded/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="/uploaded/css/all.css">
+
+</head>
+
+<body>
+    
+    <script>
+
+       
+    </script>
+
+
+
+<script src="/uploaded/js/jquery-3.3.1.slim.min.js"></script>
+<script src="/uploaded/js/popper.min.js"></script>
+<script src="/uploaded/js/bootstrap.min.js"></script>
+<script src="/uploaded/js/mine.js"></script>
+
+<%- include('header.ejs',{message:message}); %>
+
+    
+<div class="container ">
+    <h1> ADMIN LOGIN</h1>
+    <div class="row">
+        <div class="col-md-2" >
+          <!-- <h4>hello</h4> -->
+        </div>
+    
+        <div class="col-md-8 " style="background-color: beige; height: 400;" >
+            <form action="/adminloginsend" method="POST">
+                <div>
+                <%if (result) { %>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <strong>wrong Email our password!</strong> 
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    <% } %>
+                </div>
+                
+            <div class="form-group">
+                <label><strong>Name</strong></label>
+                <input class="form-control" type="text" name="username" placeholder="name" > 
+            </div>
+            
+            <div class="form-group">
+                <label><strong> Password</strong> </label>
+                <input class="form-control" type="password" name="password" placeholder="password" > 
+            </div>
+           
+    
+            <button type="submit" class="btn btn-dark" >LOGIN</button>
+        </form>
+        </div>
+        <div class="col-md-2" >
+            <!-- <h4>hello</h4> -->
+        </div>
+    
+    </div>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+
+<head>
+  <link rel='stylesheet' href='/uploaded/css/products.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- <link rel='stylesheet' href='home.css'> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <%- include('header.ejs',{message:message , userName:userName}); %>
+    <div class="parent container">
+      <% if(data.length){ for(let i=0;i < data.length;i++) { %>
+
+        <div class="child">
+
+
+          <div>
+            <img src="/uploaded/images/products/<%= data[i].image %>" id="productImage">
+          </div>
+          <div>
+            <a href="/show?id=<%= data[i].id  %>">
+              <%= data[i].product_name %>
+            </a>
+          </div>
+          <div>
+            <%= data[i].product_description %>
+          </div>
+          <div>
+            <%= data[i].product_price %> $
+          </div > 
+          <a href="/buyproductfromcart?id=<%= data[i].id  %>" id="addlink" onclick="">
+            <div class = "addTocartButton">
+             
+                <i class=" bi bi-cart-check-fill"></i> Buy Now
+              </div>
+              </a>
+          <a href="/deleteroductfromcart?id=<%= data[i].id  %>" id="addlink" onclick="">
+          <div class = "deletefromcart">
+              <i class=" bi bi-cart-check-fill"></i> Delete from your Cart
+            </div>
+            </a>
+
+          <!-- <button type="submit" class="btn btn-success" id="addToCart" onclick="function cart(){
+                      fetch('/addProducttocart' , {method: 'GET'})}"> -->
+                     
+          <!-- </button> -->
+
+        </div>
+        <% } %>
+        <a href="/buyall"id="addlink" onclick="">
+          <div class = "addTocartButton">
+           
+              <i class=" bi bi-cart-check-fill"></i> Buy All Products in your Cart
+              </div>
+            </a>
+        <%  }else{ %>
+         
+          <div>
+          <img src="/uploaded/images/projectimages/empty.png">
+        </div>
+        
+          <% } %>
+    </div>
+    
+    <script>
+    </script>
+      <%- include('footor.ejs') %>
+    
+</body>
+
+</html>

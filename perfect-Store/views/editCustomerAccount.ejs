@@ -1,0 +1,98 @@
+
+<html>
+    <head>
+    
+   
+    <title>dashboard</title>
+    </head>
+    
+    <body>
+        <%- include('header.ejs',{message:message , userName:userName}); %>
+
+<div class="container border  mb-0">
+    <form data-toggle="validator">
+    <div class="account bg-info rounded mt-4  mb-3" style="height: 50px; color: white;">
+      <h3 class="mx-3 py-2">Account setting</h3>
+      <div class="row border border-top-0 mt-0">
+         
+          <div class="col-md-3 AccountImage mt-3 ">
+              <img src="../uploaded/images/projectimages/416-4161690_empty-profile-picture-blank-avatar-image-circle.png" class="img-fluid">
+
+          </div>
+          <div class="col-md-9">
+              <div class="row mt-5">
+                <div class="col-md-1 ">
+
+                </div>
+                  
+                  
+                  <div class="col-md-9 ">
+                      <h5 style="color: black;" class="text-muted " >Name</h5>
+             <input class="form-control mb-2" value="<%= data[0].user_name %>" id="editedUserName">
+             <h5 style="color: black;" class="text-muted">Email</h5>
+             <input class="form-control mb-2" value="<%= data[0].email %>" id="email">
+             <h5 style="color: black;" class="text-muted">Tel</h5>
+             <input class="form-control mb-2" value="<%= data[0].tel%>" id="tel">
+             <h5 style="color: black;" class="text-muted">Mobile</h5>
+             <input class="form-control mb-2" value="<%= data[0].mobile%>" id="mob">
+             <h5 style="color: black;" class="text-muted">password</h5>
+             <input class="form-control mb-2" value="<%= data[0].password%>" id="pass" type="password"> 
+             <h5 style="color: black;" class="text-muted"> Confrim password</h5>
+             <input class="form-control mb-2" value="<%= data[0].password%>" id="confpass" type="password"> 
+             <div class="row">
+                 
+                 <div class="col-md-6">
+                    <h5 style="color: black;" class="text-muted">Address</h5>
+                    <input class="form-control mb-2" value="<%= data[0].address%>" id="address" required="required">
+                 </div>
+                 <div class="col-md-6">
+        <h5 for="validationCustom04">Address</h5>
+        <select class="custom-select" id="validationCustom04" required>
+            <option selected disabled value="<%= data[0].city %>"><h5 class="text-muted" style="color: black;" ></h5>City</h5></option>
+            <option>Alex</option>
+            <option>Cairo</option>
+            <option>Sauz</option>
+          </select>
+                </div>
+             </div>
+             <div class="row">
+
+            <div class="col-md-8">
+
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-info mt-2 ml-4 mb-3"  onclick="edit()"  type="submit" id="sava">Save</button>
+               
+            </div>
+        </form>
+            </div>
+<div class="col-md-1">
+   
+</div>
+                  </div>
+                  
+
+              </div>
+              
+          </div>
+         
+      </div>
+   
+
+
+    </div>
+
+
+</div>
+
+
+<script src="/uploaded/js/edit.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
